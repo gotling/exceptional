@@ -5,9 +5,8 @@ def main():
     try:
         hello()
         raise NoException()
-    except Exception as e:
-        if type(e) == StringException:
-            print e.message
+    except StringException as e:
+        print e.message
 
 
 def hello():
